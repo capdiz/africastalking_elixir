@@ -41,7 +41,7 @@ defmodule AfricastalkingElixir.Sms do
         {:error, "Please provide a phone number to send message to"}
       true ->
         http_post = HTTPoison.post(url, body, List.insert_at(headers, 0, {:apiKey, api_key}),
-                                  [ssl: [{:versions, ['tlsv1.2']}]])
+                                  [ssl: [{:versions, [:'tlsv1.2']}]])
         case http_post do
           {:ok, response} ->
             if response.body == "The supplied authentication is invalid" do
