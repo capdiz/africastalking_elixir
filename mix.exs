@@ -8,6 +8,7 @@ defmodule AfricastalkingElixir.MixProject do
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      description: description(),
       package: package()
     ]
   end
@@ -32,10 +33,16 @@ defmodule AfricastalkingElixir.MixProject do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README", "LICENCE"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE"],
       maintainers: ["Maurice Kusasirwa"],
-      licences: ["MIT"],
+      licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/capdiz/africastalking_elixir"}
     ]
+  end
+
+  defp description do
+    """
+    Unofficial AfricasTalking elixir library to work with the AfricasTalking telco api. Currently covering sending SMS
+    """
   end
 end
