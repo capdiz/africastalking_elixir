@@ -1,6 +1,6 @@
 defmodule AfricastalkingElixir do
   @moduledoc """
-  Documentation for AfricastalkingElixir.
+  Documentation for AfricastalkingElixi.
   """
 
   @doc """

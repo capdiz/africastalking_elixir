@@ -38,7 +38,7 @@ env = "production"
 AfricasTalkingElixir.Sms.send_sms(options, api_key, env)
 ```
 
-If in development, you should call the `send_sms/3` function like this:
+If in development, you should call the `send_sms/3` function like:
 
 ```
 options = [username: "sandbox", to: "+256772******", message: "Omar's comin yo!"]
